@@ -492,7 +492,7 @@ p,h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .social i {
-  color:white;
+  color:rgba(255, 255, 255, 0.7);
 }
 
 .social a:hover {
