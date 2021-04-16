@@ -468,7 +468,7 @@ p,h1, h2, h3, h4, h5, h6, .font-heading {
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  padding: 0 0 4rem 0;
+  padding: 0 0 0rem 0;
 }
 
 .footer a {
@@ -500,4 +500,8 @@ p,h1, h2, h3, h4, h5, h6, .font-heading {
 
 .social a:hover {
   color: #000;
+}
+
+.credits {
+  font-size: small
 }
