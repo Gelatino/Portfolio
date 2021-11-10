@@ -10791,5 +10791,15 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+
+  .miaugif {
+    /*border: 1px solid #555;*/
+    max-width: 50%;
+    height: auto;
+  }
+
+
+  
+
 }
 /*# sourceMappingURL=bootstrap.rtl.css.map */
