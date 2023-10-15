@@ -14,6 +14,25 @@ body {
     color:white;
     z-index: 1; /* Make sure the countdown appears on top of the cat */
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    font-family: 'Lato', sans-serif;
+
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#countdown {
+    /* ... existing styles ... */
+    animation: pulse 2s infinite;
 }
 
 
@@ -21,4 +40,42 @@ body {
     #countdown {
         font-size: 5rem;
     }
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column; /* Stack the buttons vertically */
+    align-items: center;    /* Center the buttons horizontally */
+    gap: 1rem; /* Space between the buttons */
+    margin-top: 2rem; /* Adjust as needed */
+}
+
+.link-button {
+    padding: 20px 40px; /* Increased padding for bigger buttons */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem; /* Larger font size */
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.link-button:hover {
+    transform: translateY(-2px); /* Small lift effect on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.maps-link {
+    background-color: white;
+    color: black;
+}
+
+.spotify-link {
+    background-color: blue;
+    color: white;
+}
+
+.link-button i {
+    margin-right: 10px;
 }
