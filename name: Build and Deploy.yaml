@@ -1,0 +1,21 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main  # or master, depending on your default branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Replace API key placeholder
+      run: sed -i 's/YOUR_API_KEY_PLACEHOLDER/${{ secrets.GIPHY_API_KEY }}/g' path/to/script.js
+
+    - name: Deploy to GitHub Pages
+      # You can use an action like "peaceiris/actions-gh-pages" to deploy to GitHub Pages
+      # ... (other deployment steps)
