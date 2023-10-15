@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gform.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/Gelatino/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gelatino/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Gelatino/Portfolio#readme"
+}
