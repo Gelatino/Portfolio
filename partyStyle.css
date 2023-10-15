@@ -13,5 +13,6 @@ body {
     text-align: center;
     color:white;
     z-index: 1; /* Make sure the countdown appears on top of the cat */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
