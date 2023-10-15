@@ -1,0 +1,17 @@
+
+
+body {
+    /* ... other styles ... */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#countdown {
+    font-size: 10rem;
+    text-align: center;
+    color:white;
+    z-index: 1; /* Make sure the countdown appears on top of the cat */
+}
+
