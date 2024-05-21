@@ -1,0 +1,107 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+     font-family: Futura;
+      src: local('Futura Std');
+    background: #f1faee;
+    overflow: hidden;
+}
+
+.wrapper {
+    position: relative;
+    height: 100vh;
+}
+
+.sun {
+    width: 200px;
+    height: 200px;
+    background: #fc3e50ff;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    z-index: 10; /
+}
+
+.sky {
+    height: 50%;
+    background: #A2D2FF;
+    position: relative;
+}
+
+.cloud {
+    width: 180px;
+    height: 60px;
+    background: white;
+    border-radius: 30px;
+    position: absolute;
+    top: 60px;
+}
+
+.cloud:first-child {
+    left: 150px;
+}
+
+.cloud:last-child {
+    left: 300px;
+}
+
+.lake {
+    height: 20%;
+    background: #457b9d;
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+}
+
+.land {
+    height: 20%;
+    background: #2d6a4f;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.content {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #1d3557;
+    width: 90%;
+}
+
+.title {
+    font-size: 10em; /* Maintain the large size */
+    text-align: right; /* Align text to the right */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    line-height: 0.9; /* Reduce the line height to bring them closer */
+    position: relative; /* Position relative to its normal position */
+    right: 10px; /* Adjust this value as needed to position it correctly */
+    z-index: 5; /* Ensure it's above other elements */
+}
+
+.content {
+    position: absolute;
+    top: 10%;
+    right: 0; /* Align content to the right */
+    width: 100%;
+    z-index: 5; /* Ensure content is above some background layers */
+    text-align: right; /* Aligns the text inside content div to the right */
+}
+
+a {
+    color: #E63946;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    color: #1d3557;
+    margin-top: 20px;
+}
