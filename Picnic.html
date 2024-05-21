@@ -13,11 +13,15 @@
             color: #333;
             overflow-x: hidden;
         }
-        .tiktok-wrapper {
+        .video-wrapper {
             width: 100%;
             max-width: 600px;
             margin: 20px auto;
             text-align: center;
+        }
+        .video-wrapper video {
+            width: 100%;
+            height: auto;
         }
         .picnic-invitation {
             display: none;
@@ -84,17 +88,11 @@
 </head>
 <body>
 
-<div class="tiktok-wrapper">
-    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@foreignfootprint/video/7332802019658452256" data-video-id="7332802019658452256" style="max-width: 605px;min-width: 325px;">
-        <section>
-            <a target="_blank" title="@foreignfootprint" href="https://www.tiktok.com/@foreignfootprint?refer=embed">@foreignfootprint</a>
-            Living in Germany. Expats are lonely and unhappy
-            <a title="expatingermany" target="_blank" href="https://www.tiktok.com/tag/expatingermany?refer=embed">#expatingermany</a>
-            <a title="lifeingermany" target="_blank" href="https://www.tiktok.com/tag/lifeingermany?refer=embed">#lifeingermany</a>
-            <a target="_blank" title="♬ Roxanne - Instrumental - Califa Azul" href="https://www.tiktok.com/music/Roxanne-Instrumental-6792956373559691266?refer=embed">♬ Roxanne - Instrumental - Califa Azul</a>
-        </section>
-    </blockquote>
-    <script async src="https://www.tiktok.com/embed.js"></script>
+<div class="video-wrapper">
+    <video id="lonelyexpats-video" controls autoplay muted>
+        <source src="assets/img/lonelyexpats.mov" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 </div>
 
 <div id="picnic-invitation" class="picnic-invitation">
@@ -114,20 +112,17 @@
     <h2>around here: <a href="https://maps.app.goo.gl/geUJeo2XeaK2GT3n7">link</a></h2>
     <div class="details">
         <p class="highlight">25 MAY - 14:30</p>
-        
-        <p>Bring wathever you want, people, food, drinks, blankets...</p>
-        <p>After the picnic we can go to Roderich, around the corner where there is a karaoke machine, a nice patio and good drinks. <a href="https://www.instagram.com/roderich_berlin/"> Roderich Instagram</a></p>
+        <p>Bring whatever you want, people, food, drinks, blankets...</p>
+        <p>After the picnic we can go to Roderich, around the corner where there is a karaoke machine, a nice patio and good drinks. <a href="https://www.instagram.com/roderich_berlin/">Roderich Instagram</a></p>
     </div>
 </div>
 
 <script>
-    setTimeout(() => {
+    document.getElementById('lonelyexpats-video').addEventListener('ended', () => {
         const invitation = document.getElementById('picnic-invitation');
         invitation.style.display = 'block';
-        console.log("Invitation displayed");
         invitation.scrollIntoView({ behavior: 'smooth' });
-        console.log("Scrolled to invitation");
-    }, 17000); // 15 seconds
+    });
 </script>
 
 </body>
