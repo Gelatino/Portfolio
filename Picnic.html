@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picnic Invitation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            overflow-x: hidden;
+        }
+        .tiktok-wrapper {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .picnic-invitation {
+            display: none;
+            width: 100%;
+            padding: 20px;
+            background-color: #ffffff;
+            text-align: center;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+        }
+        .picnic-invitation h1 {
+            font-size: 5em;
+            color: #264653;
+            margin: 20px 0;
+        }
+        .picnic-invitation h2 {
+            font-size: 3em;
+            color: #2A9D8F;
+            margin: 15px 0;
+        }
+        .picnic-invitation p {
+            font-size: 2em;
+            color: #333;
+            margin: 10px 0;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #E63946;
+        }
+        .graphic-elements {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .graphic-elements div {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+        }
+        .red-circle { background-color: #E63946; border-radius: 50%; }
+        .green-square { background-color: #2A9D8F; }
+        .blue-square { background-color: #264653; }
+        .black-square { background-color: #000; }
+        .background-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        .background-elements div {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.3;
+        }
+        .background-red { background-color: #E63946; width: 150px; height: 150px; top: 10%; left: 10%; }
+        .background-green { background-color: #2A9D8F; width: 200px; height: 200px; top: 70%; left: 75%; }
+        .background-blue { background-color: #264653; width: 250px; height: 250px; top: 40%; left: 35%; }
+    </style>
+</head>
+<body>
+
+<div class="tiktok-wrapper">
+    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@foreignfootprint/video/7332802019658452256" data-video-id="7332802019658452256" style="max-width: 605px;min-width: 325px;">
+        <section>
+            <a target="_blank" title="@foreignfootprint" href="https://www.tiktok.com/@foreignfootprint?refer=embed">@foreignfootprint</a>
+            Living in Germany. Expats are lonely and unhappy
+            <a title="expatingermany" target="_blank" href="https://www.tiktok.com/tag/expatingermany?refer=embed">#expatingermany</a>
+            <a title="lifeingermany" target="_blank" href="https://www.tiktok.com/tag/lifeingermany?refer=embed">#lifeingermany</a>
+            <a target="_blank" title="♬ Roxanne - Instrumental - Califa Azul" href="https://www.tiktok.com/music/Roxanne-Instrumental-6792956373559691266?refer=embed">♬ Roxanne - Instrumental - Califa Azul</a>
+        </section>
+    </blockquote>
+    <script async src="https://www.tiktok.com/embed.js"></script>
+</div>
+
+<div id="picnic-invitation" class="picnic-invitation">
+    <div class="background-elements">
+        <div class="background-red"></div>
+        <div class="background-green"></div>
+        <div class="background-blue"></div>
+    </div>
+    <div class="graphic-elements">
+        <div class="red-circle"></div>
+        <div class="green-square"></div>
+        <div class="blue-square"></div>
+        <div class="black-square"></div>
+    </div>
+    <h1>PICNIC</h1>
+    <h2>Around Rosengarten Pankow</h2>
+    <h2>around here: <a href="https://maps.app.goo.gl/geUJeo2XeaK2GT3n7">link</a></h2>
+    <div class="details">
+        <p class="highlight">25 MAY - 14:30</p>
+        
+        <p>Bring wathever you want, people, food, drinks, blankets...</p>
+        <p>After the picnic we can go to Roderich, around the corner where there is a karaoke machine, a nice patio and good drinks. <a href="https://www.instagram.com/roderich_berlin/"> Roderich Instagram</a></p>
+    </div>
+</div>
+
+<script>
+    setTimeout(() => {
+        const invitation = document.getElementById('picnic-invitation');
+        invitation.style.display = 'block';
+        console.log("Invitation displayed");
+        invitation.scrollIntoView({ behavior: 'smooth' });
+        console.log("Scrolled to invitation");
+    }, 17000); // 15 seconds
+</script>
+
+</body>
+</html>
