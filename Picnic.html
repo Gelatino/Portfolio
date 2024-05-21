@@ -89,7 +89,7 @@
 <body>
 
 <div class="video-wrapper">
-    <video id="lonelyexpats-video" controls autoplay muted>
+    <video id="lonelyexpats-video" autoplay muted playsinline>
         <source src="assets/img/lonelyexpats.mov" type="video/mp4">
         Your browser does not support the video tag.
     </video>
@@ -118,6 +118,10 @@
 </div>
 
 <script>
+    document.getElementById('lonelyexpats-video').addEventListener('click', function() {
+        this.muted = !this.muted;
+    });
+
     document.getElementById('lonelyexpats-video').addEventListener('ended', () => {
         const invitation = document.getElementById('picnic-invitation');
         invitation.style.display = 'block';
