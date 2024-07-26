@@ -1,5 +1,5 @@
 document.getElementById('donateButton').addEventListener('click', function() {
-    window.location.href = 'https://www.paypal.com/donate/link-to-your-paypal';
+    window.location.href = 'https://www.paypal.com/pools/c/96ytF4o5tA';
 });
 
 // Function to detect the user's country
@@ -16,22 +16,16 @@ async function detectCountry() {
 
 // Function to switch text based on country
 function switchText(country) {
-    if (country === 'Germany') {
-        document.getElementById('header-text').innerText = 'Gewinne einen wunderschönen handgefertigten Teppich und unterstütze den Film "Oneira"';
-        document.getElementById('prize-title').innerText = 'Der Preis';
-        document.getElementById('prize-text').innerText = 'Spenden Sie $10 über PayPal für eine Chance, einen handgefertigten Teppich zu gewinnen. Alle Einnahmen unterstützen den Film "Oneira".';
-        document.getElementById('cause-title').innerText = 'Die Ursache';
-        document.getElementById('cause-text').innerText = 'Ich möchte die Geschichte so vieler Menschen erzählen, die große Träume haben, diese aber aufgrund ihrer Situation nicht erreichen können. Wir sind es gewohnt, tröstende Filme zu sehen, in denen die Hauptfigur alles bekommt, was sie will. Aber in "Oneira" geht es in Emilis Geschichte nicht nur darum, wie talentiert sie ist oder wie hart sie arbeitet, sondern darum, wie sie es versucht, selbst wenn die Chancen gegen sie stehen. Es geht um Glück und darum, in einer schwierigen Situation geboren zu werden. Wie Emili erreichen Tausende von Menschen ihre Träume nicht. Ich wollte sie feiern und zeigen, dass ihre Geschichten wichtig sind und es verdient haben, erzählt zu werden.';
-        document.getElementById('why-title').innerText = 'Das Warum';
-        document.getElementById('why-text').innerText = 'Die Unterstützung dieser Verlosung gibt Ihnen nicht nur die Chance, einen wunderschönen handgefertigten Teppich zu gewinnen, sondern hilft auch, den Film "Oneira" zum Leben zu erwecken. Der Film zielt darauf ab, auf die Schwierigkeiten talentierter Menschen aufmerksam zu machen, die trotz ihrer Bemühungen und Talente enorme Hindernisse überwinden müssen. Ihr Beitrag hilft, ihre Geschichten zu teilen und das Bewusstsein zu schärfen.';
-    } else if (country === 'Mexico') {
+    if (country === 'Mexico') {
         document.getElementById('header-text').innerText = 'Gana una hermosa alfombra hecha a mano y apoya la película "Oneira"';
         document.getElementById('prize-title').innerText = 'El Premio';
-        document.getElementById('prize-text').innerText = 'Dona $10 a través de PayPal para tener la oportunidad de ganar una alfombra hecha a mano. Todos los ingresos apoyan la película "Oneira".';
+        document.getElementById('prize-text').innerText = 'Una hermosa alfombra hecha a mano que representa el mito del Minotauro, con Ariadna y su hilo dorado. Esta alfombra está hecha con la técnica de aguja de perforación, completamente a mano.';
+        document.getElementById('raffle-title').innerText = 'La Rifa';
+        document.getElementById('raffle-text').innerText = 'Dona 10 Euros a través de PayPal para tener la oportunidad de ganar. El ganador será elegido el 2 de agosto durante una transmisión en vivo de Instagram a las 16:00.';
         document.getElementById('cause-title').innerText = 'La Causa';
-        document.getElementById('cause-text').innerText = 'Quiero contar la historia de tantas personas que tienen grandes sueños, pero no pueden alcanzarlos debido a su situación. Estamos acostumbrados a películas reconfortantes donde el personaje principal consigue todo lo que desea. Pero en "Oneira", la historia de Emili no se trata solo de cuán talentosa es o cuánto se esfuerza, sino de cómo lo intenta, incluso cuando las probabilidades no están a su favor. Se trata de la suerte, y de nacer en una situación difícil. Al igual que Emili, miles de personas no alcanzan sus sueños. Quería celebrarlos y mostrar que sus historias son importantes y merecen ser contadas.';
-        document.getElementById('why-title').innerText = 'El Por Qué';
-        document.getElementById('why-text').innerText = 'Apoyar esta rifa no solo te da la oportunidad de ganar una hermosa alfombra hecha a mano, sino que también ayuda a hacer realidad la película "Oneira". La película tiene como objetivo arrojar luz sobre las luchas de personas talentosas que, a pesar de sus esfuerzos y talentos, enfrentan enormes obstáculos. Tu contribución ayuda a compartir sus historias y crear conciencia.';
+        document.getElementById('cause-text').innerText = 'Quiero hacer un cortometraje sobre Emili, una aspirante a actriz de México, que enfrenta desafíos en su búsqueda de la fama. Emili y su madre dirigen un pequeño restaurante en un pueblo olvidado. Cuando una gran empresa anuncia una convocatoria de casting, Emili lo ve como su gran oportunidad. Con el apoyo de sus amigos, lucha con la autoconfianza y la presión de su madre para quedarse y ayudar.';
+        document.getElementById('reason-title').innerText = 'La Razón';
+        document.getElementById('reason-text').innerText = 'Quiero contar la historia de aquellos con grandes sueños pero en circunstancias difíciles. "Oneira" no se trata solo de talento o trabajo duro; se trata de intentar contra las adversidades. Muchas personas no alcanzan sus sueños, y quiero celebrar sus historias y mostrar que importan.';
     }
 }
 
@@ -41,3 +35,15 @@ detectCountry().then(country => {
         switchText(country);
     }
 });
+
+// Function to make a letter fall and navigate to the second section
+function makeLetterFall() {
+    const fallingLetter = document.querySelector('.header-content h1:nth-child(3)'); // Select the 3rd letter for animation
+    fallingLetter.classList.add('falling');
+    fallingLetter.addEventListener('animationend', () => {
+        document.getElementById('prize').scrollIntoView({ behavior: 'smooth' });
+    });
+}
+
+// Trigger the letter fall after 3 seconds
+setTimeout(makeLetterFall, 3000);
