@@ -21,7 +21,7 @@ function switchText(country) {
         document.getElementById('prize-title').innerText = 'El Premio';
         document.getElementById('prize-text').innerText = 'Una hermosa alfombra hecha a mano que representa el mito del Minotauro, con Ariadna y su hilo dorado. Esta alfombra está hecha con la técnica de aguja de perforación, completamente a mano.';
         document.getElementById('raffle-title').innerText = 'La Rifa';
-        document.getElementById('raffle-text').innerText = 'Dona 120 MXN a través de PayPal para tener la oportunidad de ganar. El ganador será elegido el 2 de agosto durante una transmisión en vivo de Instagram a las 10:00.';
+        document.getElementById('raffle-text').innerText = 'Dona 10 Euros a través de PayPal para tener la oportunidad de ganar. El ganador será elegido el 2 de agosto durante una transmisión en vivo de Instagram a las 16:00.';
         document.getElementById('cause-title').innerText = 'La Causa';
         document.getElementById('cause-text').innerText = 'Quiero hacer un cortometraje sobre Emili, una aspirante a actriz de México, que enfrenta desafíos en su búsqueda de la fama. Emili y su madre dirigen un pequeño restaurante en un pueblo olvidado. Cuando una gran empresa anuncia una convocatoria de casting, Emili lo ve como su gran oportunidad. Con el apoyo de sus amigos, lucha con la autoconfianza y la presión de su madre para quedarse y ayudar.';
         document.getElementById('reason-title').innerText = 'La Razón';
@@ -40,6 +40,7 @@ detectCountry().then(country => {
 function makeLetterFall() {
     const fallingLetter = document.querySelector('.header-content h1:nth-child(3)'); // Select the 3rd letter for animation
     fallingLetter.classList.add('falling');
+    console.log('ho');
     fallingLetter.addEventListener('animationend', () => {
         document.getElementById('prize').scrollIntoView({ behavior: 'smooth' });
     });
