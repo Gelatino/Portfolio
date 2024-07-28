@@ -19,13 +19,13 @@ function switchText(country) {
     if (country === 'Mexico') {
         document.getElementById('header-text').innerText = 'Gana una hermosa alfombra hecha a mano y apoya la película "Oneira"';
         document.getElementById('prize-title').innerText = 'El Premio';
-        document.getElementById('prize-text').innerText = 'Una hermosa alfombra hecha a mano que representa el mito del Minotauro, con Ariadna y su hilo dorado. Esta alfombra está hecha con la técnica de aguja de perforación, completamente a mano.';
+        document.getElementById('prize-text').innerText = 'Una hermosa alfombra hecha a mano que representa el mito del Minotauro, con Ariadna y su hilo dorado. Esta alfombra está hecha con la técnica de aguja de perforación, completamente a mano. (Solamente CDMX y alrededores)';
         document.getElementById('raffle-title').innerText = 'La Rifa';
-        document.getElementById('raffle-text').innerText = 'Dona 10 Euros a través de PayPal para tener la oportunidad de ganar. El ganador será elegido el 2 de agosto durante una transmisión en vivo de Instagram a las 16:00.';
+        document.getElementById('raffle-text').innerText = 'Dona 10 Euros a través de PayPal para tener la oportunidad de ganar. El ganador será elegido el 2 de agosto y anunciado en Instagram a las 16:00.';
         document.getElementById('cause-title').innerText = 'La Causa';
-        document.getElementById('cause-text').innerText = 'Quiero hacer un cortometraje sobre Emili, una aspirante a actriz de México, que enfrenta desafíos en su búsqueda de la fama. Emili y su madre dirigen un pequeño restaurante en un pueblo olvidado. Cuando una gran empresa anuncia una convocatoria de casting, Emili lo ve como su gran oportunidad. Con el apoyo de sus amigos, lucha con la autoconfianza y la presión de su madre para quedarse y ayudar.';
+        document.getElementById('cause-text').innerText = 'Queremos hacer un cortometraje sobre Emili, una aspirante a actriz de México, que enfrenta desafíos en su búsqueda de la fama. Emili y su madre dirigen un pequeño restaurante en un pueblo olvidado. Cuando una gran empresa anuncia una convocatoria de casting, Emili lo ve como su gran oportunidad. Con el apoyo de sus amigos, lucha con la autoconfianza y la presión de su madre para quedarse y ayudar.';
         document.getElementById('reason-title').innerText = 'La Razón';
-        document.getElementById('reason-text').innerText = 'Quiero contar la historia de aquellos con grandes sueños pero en circunstancias difíciles. "Oneira" no se trata solo de talento o trabajo duro; se trata de intentar contra las adversidades. Muchas personas no alcanzan sus sueños, y quiero celebrar sus historias y mostrar que importan.';
+        document.getElementById('reason-text').innerText = 'Queremos contar la historia de aquellos con grandes sueños pero en circunstancias difíciles. "Oneira" no se trata solo de talento o trabajo duro; se trata de intentar contra las adversidades. Muchas personas no alcanzan sus sueños, y quiero celebrar sus historias y mostrar que importan.';
     }
 }
 
