@@ -87,3 +87,12 @@ section {
         grid-template-columns: 1fr; /* Single column for smaller screens */
     }
 }
+
+/* CSS to handle the expansion of images */
+.gallery-photo img.expanded {
+    position: relative;
+    z-index: 10;
+    transform: scale(1.5); /* Increase size for better view */
+    transition: transform 0.3s ease; /* Smooth transition */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Optional shadow for effect */
+}
