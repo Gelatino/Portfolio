@@ -1,0 +1,89 @@
+body {
+    background-color: black;
+    font-family: 'Cantarell', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.title {
+    color: #FF69B4;
+    font-size: 6em; /* Way bigger for prominence */
+    font-weight: bold;
+    padding: 50px 0;
+}
+
+.subtitle {
+    color: #FF69B4;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px; /* Adds spacing between the columns */
+}
+
+.info-column {
+    flex: 1;
+    min-width: 150px; /* Ensures it works on small screens */
+    max-width: 250px;
+}
+
+.info p {
+    margin: 0;
+    padding: 10px;
+}
+
+.synopsis {
+    padding: 20px;
+}
+
+.cast-gallery, .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.cast-photo, .gallery-photo {
+    position: relative;
+}
+
+.cast-photo img, .gallery-photo img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.cast-photo img:hover, .gallery-photo img:hover {
+    transform: scale(1.05); /* Enlarge slightly on hover */
+}
+
+section {
+    padding: 40px 20px;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 3.5em; /* Adjust for smaller screens */
+    }
+
+    .info-container {
+        flex-direction: column; /* Stack the columns vertically on smaller screens */
+    }
+
+    .info, .synopsis, .cast-gallery, .gallery {
+        padding: 15px;
+    }
+
+    .cast-gallery, .gallery {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+}
