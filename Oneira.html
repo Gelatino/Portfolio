@@ -94,14 +94,14 @@
         }
 
         .gallery-photo {
-            width: 200px;
-            height: 200px;
+            width: 400px; /* Increase the size to display images larger */
+            height: auto;
         }
 
         .gallery-photo img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: auto;
+            object-fit: contain;
             cursor: pointer;
             transition: transform 0.3s ease;
         }
@@ -122,13 +122,13 @@
     <section data-aos="fade-in">
         <div class="info-container">
             <div class="info-column">
-                <p><strong>Dirección:</strong><br> Miguel Guzman</p>
+                <p><strong>Dirección:</strong><br> <a href="https://www.miaumiau.productions/about.html" target="_blank">Miguel Guzman</a></p>
             </div>
             <div class="info-column">
-                <p><strong>DOP:</strong><br> Montse Roma</p>
+                <p><strong>DOP:</strong><br> <a href="https://www.montseroma.com/" target="_blank">Montse Roma</a></p>
             </div>
             <div class="info-column">
-                <p><strong>Guión:</strong><br> Miguel Guzman<br>Martín Cortés</p>
+                <p><strong>Guión:</strong><br> <a href="https://www.miaumiau.productions/about.html" target="_blank">Miguel Guzman</a><br><a href="https://youtu.be/BMr030furOk" target="_blank">Martín Cortés</a></p>
             </div>
             <div class="info-column">
                 <p><strong>Producido por:</strong><br> Andrea Sofía Hernández<br> Sebas LG</p>
@@ -145,6 +145,12 @@
     </section>
 
     <!-- Director's Note Section -->
+    <section data-aos="fade-in">
+        <h2 class="subtitle" style="text-align: center;">Nota del Director</h2>
+        <p class="director-note">
+            Quiero contar la historia de tantas personas que tienen grandes sueños, pero no pueden alcanzarlos debido a su situación. Estamos acostumbrados a películas reconfortantes donde el personaje principal consigue todo lo que desea. Pero en "Oneira", la historia de Emili no se trata solo de cuán talentosa es o cuánto se esfuerza, sino de cómo lo intenta, incluso cuando las probabilidades no están a su favor. Se trata de la suerte, y de nacer en una situación difícil. Al igual que Emili, miles de personas no alcanzan sus sueños. Quería celebrarlos y mostrar que sus historias son importantes y merecen ser contadas.
+        </p>
+    </section>
 
     <!-- Cast Section with 4 Photos in 2 Columns -->
     <section data-aos="fade-in">
@@ -169,15 +175,7 @@
         </div>
     </section>
 
-
-    <section data-aos="fade-in">
-        <h2 class="subtitle" style="text-align: center;">Nota del Director</h2>
-        <p class="director-note">
-            Quiero contar la historia de tantas personas que tienen grandes sueños, pero no pueden alcanzarlos debido a su situación. Estamos acostumbrados a películas reconfortantes donde el personaje principal consigue todo lo que desea. Pero en "Oneira", la historia de Emili no se trata solo de cuán talentosa es o cuánto se esfuerza, sino de cómo lo intenta, incluso cuando las probabilidades no están a su favor. Se trata de la suerte, y de nacer en una situación difícil. Al igual que Emili, miles de personas no alcanzan sus sueños. Quería celebrarlos y mostrar que sus historias son importantes y merecen ser contadas.
-        </p>
-    </section>
-
-    <!-- Gallery Section with Click-to-Fullscreen Photos -->
+    <!-- Gallery Section with Full Size on Website Photos -->
     <section data-aos="fade-in">
         <h2 class="subtitle" style="text-align: center;">Imágenes del Film</h2>
         <div class="gallery">
