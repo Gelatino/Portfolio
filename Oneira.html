@@ -2,10 +2,162 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://plant-hyena-ba5.notion.site/ONEIRA-7418cd09ce84490d86aec975d8249feb?pvs=4">
-    <title>Redirecting...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/Oneira.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <title>Oneira</title>
+    <style>
+        body {
+            background-color: #f5f5f5; /* Light gray background for better readability */
+            color: #333; /* Dark text for good contrast */
+            font-family: 'Cantarell', sans-serif;
+        }
+        .title {
+            color: #c2185b; /* Pinkish color for the title */
+            text-align: center;
+            padding-top: 20px;
+        }
+        .info-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .info-column {
+            flex: 1;
+            min-width: 200px;
+            max-width: 300px;
+            text-align: center;
+        }
+        .synopsis {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: justify;
+        }
+        .cast-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .cast-photo {
+            position: relative;
+            width: 200px;
+            height: 300px;
+        }
+        .cast-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .cast-name {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .gallery-photo {
+            width: 200px;
+            height: 200px;
+        }
+        .gallery-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
-    <p>If you are not redirected, <a href="https://plant-hyena-ba5.notion.site/ONEIRA-7418cd09ce84490d86aec975d8249feb?pvs=4">click here</a>.</p>
+    <!-- Header Section -->
+    <header>
+        <h1 class="title">ONEIRA</h1>
+    </header>
+
+    <!-- Quick Info Section with 4 Columns -->
+    <section data-aos="fade-in">
+        <div class="info-container">
+            <div class="info-column">
+                <p><strong>Dirección:</strong><br> Miguel Guzman</p>
+            </div>
+            <div class="info-column">
+                <p><strong>DOP:</strong><br> Montse Roma</p>
+            </div>
+            <div class="info-column">
+                <p><strong>Guión:</strong><br> Miguel Guzman<br>Martín Cortés</p>
+            </div>
+            <div class="info-column">
+                <p><strong>Producido por:</strong><br> Andrea Sofía Hernández<br> Sebas LG</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Synopsis Section -->
+    <section data-aos="fade-in">
+        <h2 class="subtitle" style="text-align: center;">SINOPSIS CORTA</h2>
+        <p class="synopsis">
+           Emili y su madre tienen un pequeño puesto de quesadillas en un pueblo olvidado de México. Mientras todo el pueblo está absorto en el fútbol, una gran empresa anuncia un casting abierto, y Emili ve la oportunidad de su vida para lograr su sueño de ser actriz, aunque las dudas y la presión de su madre la harán cuestionar si debe ir.
+        </p>
+    </section>
+
+    <!-- Cast Section with 4 Photos in 2 Columns -->
+    <section data-aos="fade-in">
+        <h2 class="subtitle" style="text-align: center;">Reparto</h2>
+        <div class="cast-gallery">
+            <div class="cast-photo">
+                <img src="assets/img/Oneira/FridaAlcantara.jpg" alt="Frida Alcantara">
+                <div class="cast-name">Frida Alcantara</div>
+            </div>
+            <div class="cast-photo">
+                <img src="assets/img/Oneira/GabrielaRuiz.jpg" alt="Gabriela Ruiz">
+                <div class="cast-name">Gabriela Ruiz</div>
+            </div>
+            <div class="cast-photo">
+                <img src="assets/img/Oneira/AriTamarindo.jpeg" alt="Ari Tamarindo">
+                <div class="cast-name">Ari Tamarindo</div>
+            </div>
+            <div class="cast-photo">
+                <img src="assets/img/Oneira/SaulMercado.jpg" alt="Saul Mercado">
+                <div class="cast-name">Saul Mercado</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section with Click-to-Fullscreen Photos -->
+    <section data-aos="fade-in">
+        <h2 class="subtitle" style="text-align: center;">Imágenes del Film</h2>
+        <div class="gallery">
+            <div class="gallery-photo"><img src="assets/img/Oneira/snap1.png" alt="Film Image 1"></div>
+            <div class="gallery-photo"><img src="assets/img/Oneira/snap2.png" alt="Film Image 2"></div>
+            <div class="gallery-photo"><img src="assets/img/Oneira/snap3.png" alt="Film Image 3"></div>
+            <div class="gallery-photo"><img src="assets/img/Oneira/snap4.png" alt="Film Image 4"></div>
+        </div>
+    </section>
+
+    <!-- JS and AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Effect duration in ms
+            once: true // Animation only occurs once as you scroll
+        });
+    </script>
+    <script src="assets/js/Oneira.js"></script>
 </body>
 </html>
